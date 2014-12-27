@@ -2,11 +2,23 @@
   "name": "gulp-jade-template",
   "version": "0.0.3",
   "description": "gulp plugin for jade template",
+  "keywords": [
+    "gulpplugin",
+    "jade",
+    "template",
+    "gulp"
+  ],
   "main": "build/index.js",
   "scripts": {
     "test": "./node_modules/.bin/gulp test"
   },
-  "author": "jigsaw (http://jgs.me)",
+  "author": {
+    "name": "jigsaw",
+    "url": "http://jgs.me"
+  },
+  "repository": {
+    "url": "https://github.com/e-jigsaw/gulp-jade-template.git"
+  },
   "license": "MIT",
   "dependencies": {
     "gulp-util": "^3.0.1",
