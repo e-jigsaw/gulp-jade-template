@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "gulp plugin for jade template",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/gulp test"
   },
   "author": "jigsaw (http://jgs.me)",
   "license": "MIT",
