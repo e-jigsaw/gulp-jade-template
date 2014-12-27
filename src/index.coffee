@@ -19,6 +19,4 @@ module.exports = (template)->
     file.contents = new Buffer html
     callback null, file
 
-  flush = (callback)->
-
-  through.obj transform, flush
+  through.obj transform

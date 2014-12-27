@@ -12,7 +12,7 @@
   path = require('path');
 
   module.exports = function(template) {
-    var flush, transform;
+    var transform;
     transform = function(file, encoding, callback) {
       var err, html;
       if (template == null) {
@@ -34,8 +34,7 @@
       file.contents = new Buffer(html);
       return callback(null, file);
     };
-    flush = function(callback) {};
-    return through.obj(transform, flush);
+    return through.obj(transform);
   };
 
 }).call(this);
