@@ -2,6 +2,7 @@
   "name": "gulp-jade-template",
   "version": "0.0.1",
   "description": "gulp plugin for jade template",
+  "main": "build/index.js",
   "scripts": {
     "test": "./node_modules/.bin/gulp test"
   },
