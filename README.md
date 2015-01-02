@@ -1,15 +1,75 @@
-gulp-jade-template
+gulp-jade-template [![npm version](https://badge.fury.io/js/gulp-jade-template.svg)](http://badge.fury.io/js/gulp-jade-template) [![dependency Status](https://david-dm.org/e-jigsaw/gulp-jade-template/status.svg)](https://david-dm.org/e-jigsaw/gulp-jade-template) [![devDependency Status](https://david-dm.org/e-jigsaw/gulp-jade-template/dev-status.svg)](https://david-dm.org/e-jigsaw/gulp-jade-template#info=devDependencies)
 ==================
 
 gulp plugin for jade template
 
 # Usage
 
+This plugin compile [Jade](http://jade-lang.com/) template with `vinyl.contents` as local variables.
+
+## Example
+
+`example.json`:
+
+```json
+{
+  "name": {
+    "first": "Taro",
+    "last":  "Momo"
+  }
+}
+```
+
+`example.jade`:
+
+```jade
+p Hello, #{name.first} #{name.last}
+```
+
+`gulpfile.coffee`:
+
+```coffee
+gulp = require 'gulp'
+jadeTemplate = require 'gulp-jade-template'
+data = require 'gulp-data'
+
+gulp.task 'jade', ->
+  gulp.src 'example.json'
+    .pipe data (file)-> require file.path
+    .pipe jadeTemplate 'example.jade'
+    .pipe gulp.dest 'example.html'
+```
+
+run task:
+
+```
+% gulp jade
+% cat example.html
+<p>Hello, Taro Momo</p>
+```
+
 # Installation
+
+```
+% npm install gulp-jade-template
+```
 
 # Requirements
 
+* Node.js
+* gulp
+
 # Build
+
+```
+% gulp
+```
+
+# Test
+
+```
+% npm test
+```
 
 # Author
 
