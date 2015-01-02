@@ -1,5 +1,7 @@
-gulp-jade-template [![npm version](https://badge.fury.io/js/gulp-jade-template.svg)](http://badge.fury.io/js/gulp-jade-template) [![dependency Status](https://david-dm.org/e-jigsaw/gulp-jade-template/status.svg)](https://david-dm.org/e-jigsaw/gulp-jade-template) [![devDependency Status](https://david-dm.org/e-jigsaw/gulp-jade-template/dev-status.svg)](https://david-dm.org/e-jigsaw/gulp-jade-template#info=devDependencies)
+gulp-jade-template
 ==================
+
+[![npm version](https://badge.fury.io/js/gulp-jade-template.svg)](http://badge.fury.io/js/gulp-jade-template) [![dependency Status](https://david-dm.org/e-jigsaw/gulp-jade-template/status.svg)](https://david-dm.org/e-jigsaw/gulp-jade-template) [![devDependency Status](https://david-dm.org/e-jigsaw/gulp-jade-template/dev-status.svg)](https://david-dm.org/e-jigsaw/gulp-jade-template#info=devDependencies)
 
 gulp plugin for jade template
 
