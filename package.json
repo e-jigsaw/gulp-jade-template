@@ -1,6 +1,6 @@
 {
   "name": "gulp-jade-template",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "gulp plugin for jade template",
   "keywords": [
     "gulpplugin",
