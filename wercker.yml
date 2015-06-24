@@ -1,4 +1,4 @@
-box: jgs/nodebrew@0.1.1
+box: nodesource/trusty:iojs-1.8.1
 build:
   steps:
     - npm-install
