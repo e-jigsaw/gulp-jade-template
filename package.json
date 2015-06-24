@@ -12,7 +12,8 @@
   "scripts": {
     "test": "gulp test",
     "build": "gulp",
-    "prepublish": "rm -rf build/ && gulp"
+    "prepublish": "rm -rf build/ && gulp",
+    "pretest": "npm run build"
   },
   "author": {
     "name": "jigsaw",

@@ -1,5 +1,8 @@
-box: jgs/nodebrew@0.1.1
+box: nodesource/trusty:iojs-1.8.1
 build:
   steps:
+    - script:
+        name: Set NODE_ENV
+        code: export NODE_ENV=development
     - npm-install
     - npm-test
