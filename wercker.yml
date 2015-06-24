@@ -1,0 +1,5 @@
+box: jgs/nodebrew@0.1.1
+build:
+  steps:
+    - npm-install
+    - npm-test
